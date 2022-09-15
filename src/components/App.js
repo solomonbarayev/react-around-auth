@@ -136,11 +136,13 @@ function App() {
     api
       .setUserInfo({ name, about })
       .then((res) => {
-        setIsLoading(false);
         setCurrentUser(res);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   const handleUpdateAvatar = (url) => {
@@ -148,11 +150,13 @@ function App() {
     api
       .setUserAvatar(url)
       .then((res) => {
-        setIsLoading(false);
         setCurrentUser(res);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => {
+        setIsLoading(false);
+      });
   };
 
   function handleCardLike(card) {
@@ -176,14 +180,16 @@ function App() {
     api
       .deleteCard(selectedCard._id)
       .then((res) => {
-        setIsLoading(false);
         const newCards = cards.filter(
           (currentCard) => currentCard._id !== selectedCard._id
         );
         setCards(newCards);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => {
+        setIsLoading(false);
+      });
   }
 
   function handleAddPlaceSubmit(card) {
@@ -191,11 +197,13 @@ function App() {
     api
       .createCard(card)
       .then((card) => {
-        setIsLoading(false);
         setCards([card, ...cards]);
         closeAllPopups();
       })
-      .catch(console.log);
+      .catch(console.log)
+      .finally(() => {
+        setIsLoading(false);
+      });
   }
 
   //Register and Login
