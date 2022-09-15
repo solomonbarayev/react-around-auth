@@ -13,7 +13,6 @@ export function Navbar({
   const location = useLocation();
   const isLogin = location.pathname === '/signin';
   const isRegister = location.pathname === '/signup';
-  const isMain = location.pathname === '/';
 
   return (
     <nav className="navbar">

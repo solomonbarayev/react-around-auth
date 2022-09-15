@@ -27,6 +27,7 @@ const InfoTooltip = ({ isOpen, onClose, type }) => {
       <img
         src={success ? successfulIcon : unsuccessfulIcon}
         className="tooltip__image"
+        alt={`${success ? 'successful' : 'unsuccessful'} attempt`}
       />
       <h2 className="tooltip__text">
         {success
