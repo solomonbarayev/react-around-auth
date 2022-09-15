@@ -86,7 +86,13 @@ function App() {
             history.push('/');
           }
         })
-        .catch(console.log);
+        .catch((err) => {
+          console.log(err);
+          history.push('/signin');
+        })
+        .finally(() => {
+          setIsCheckingToken(false);
+        });
     }
   }, []);
 
@@ -242,7 +248,12 @@ function App() {
           handleSignout={handleSignout}
         />
         <Switch>
-          <ProtectedRoute exact path="/" loggedIn={loggedIn}>
+          <ProtectedRoute
+            exact
+            path="/"
+            loggedIn={loggedIn}
+            isCheckingToken={isCheckingToken}
+          >
             <Main
               onDeleteButtonClick={handleDeleteButtonClick}
               onEditProfileClick={handleEditProfileClick}
