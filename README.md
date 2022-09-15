@@ -30,6 +30,10 @@ GH pages live link: [Click here to view](https://solomonbarayev.github.io/react-
 
 All authorization, registration and token requests all go through to the server running on [https://register.nomoreparties.co](https://register.nomoreparties.co/).
 
+#### Design file used for this project:
+
+[View Figma file](https://www.figma.com/file/yXGGl4EnWYEPzGJU2dSJ1L/Sprint-14-Registration-and-Authorization?node-id=0%3A1)
+
 ### Improvements:
 
 - To build my own backend to connect my own server.
