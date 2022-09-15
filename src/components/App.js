@@ -230,7 +230,11 @@ function App() {
           history.push('/');
         }
       })
-      .catch(console.log);
+      .catch((err) => {
+        console.log(err);
+        setInfoTooltipType('unsuccessful');
+        setIsInfoTooltipOpen(true);
+      });
   }
 
   function handleSignout() {
@@ -262,7 +266,6 @@ function App() {
               onCardClick={handleCardClick}
               cards={cards}
               onCardLike={handleCardLike}
-              // onCardDelete={handleCardDelete}
             />
           </ProtectedRoute>
 
