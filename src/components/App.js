@@ -54,7 +54,27 @@ function App() {
   //history hook
   const history = useHistory();
 
-  //Effects
+  //adding event listener for ESC key and overlay click
+  useEffect(() => {
+    const closeByEscape = (e) => {
+      if (e.key === 'Escape') {
+        closeAllPopups();
+      }
+    };
+    const closeByOverlay = (e) => {
+      if (e.target.classList.contains('popup_opened')) {
+        closeAllPopups();
+      }
+    };
+    document.addEventListener('keydown', closeByEscape);
+    document.addEventListener('click', closeByOverlay);
+
+    return () => {
+      document.removeEventListener('keydown', closeByEscape);
+      document.removeEventListener('click', closeByOverlay);
+    };
+  }, []);
+
   useEffect(() => {
     api
       .getUserInfo()
@@ -213,16 +233,16 @@ function App() {
       .then((res) => {
         if (res.data._id) {
           setInfoTooltipType('successful');
-          setIsInfoTooltipOpen(true);
           history.push('/signin');
         } else {
           setInfoTooltipType('unsuccessful');
-          setIsInfoTooltipOpen(true);
         }
       })
       .catch((err) => {
         console.log(err);
         setInfoTooltipType('unsuccessful');
+      })
+      .finally(() => {
         setIsInfoTooltipOpen(true);
       });
   }
@@ -324,12 +344,14 @@ function App() {
           card={selectedCard}
           isOpen={isImagePreviewOpen}
           onClose={closeAllPopups}
+          name="image-prev"
         />
         <InfoTooltip
           isOpen={isInfoTooltipOpen}
           onClose={closeAllPopups}
           type={infoTooltipType}
           isTooltipOpen={isInfoTooltipOpen}
+          name="tooltip"
         />
       </CurrentUserContext.Provider>
     </div>

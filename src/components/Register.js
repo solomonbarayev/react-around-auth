@@ -46,7 +46,7 @@ const Register = ({ handleRegister }) => {
           onChange={handleChange}
         />
 
-        <footer className="auth-form__footer">
+        <div className="auth-form__footer">
           <div className="auth-form__footer-wrapper">
             <button type="submit" className="auth-form__submit-button">
               Sign up
@@ -58,7 +58,7 @@ const Register = ({ handleRegister }) => {
               </Link>
             </p>
           </div>
-        </footer>
+        </div>
       </form>
     </div>
   );

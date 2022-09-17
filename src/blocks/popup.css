@@ -39,6 +39,11 @@
   position: relative;
 }
 
+.popup__container_type_tooltip {
+  max-width: 430px;
+  padding: 60px 36px;
+}
+
 .popup__close-button {
   position: absolute;
   top: -38px;
@@ -69,7 +74,7 @@
   font-size: 24px;
   font-weight: 900;
 }
-.popup__container_type_image-preview {
+.popup__container_type_image-prev {
   padding: 0px;
   background-color: transparent;
   color: #fff;
@@ -99,6 +104,12 @@
     gap: 67px;
     padding: 25px 22px;
   }
+
+  .popup_type_tooltip .popup__container {
+    padding: 50px 18px;
+    gap: 40px;
+  }
+
   .popup__container_type_tooltip {
     gap: 0;
     padding-top: 50px;
@@ -116,7 +127,7 @@
     width: 30px;
   }
 
-  .popup__container_type_image-preview {
+  .popup__container_type_image-prev {
     padding: 0;
     gap: 10px;
     max-width: 75vw;

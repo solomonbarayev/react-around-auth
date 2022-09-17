@@ -1,18 +1,18 @@
-import React, { useState, useContext, useEffect } from "react";
-import PopupWithForm from "./PopupWithForm";
-import { CurrentUserContext } from "../contexts/CurrentUserContext";
+import React, { useState, useContext, useEffect } from 'react';
+import PopupWithForm from './PopupWithForm';
+import { CurrentUserContext } from '../contexts/CurrentUserContext';
 
 const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoading }) => {
   const currentUser = useContext(CurrentUserContext);
 
-  const [name, setName] = useState("");
-  const [description, setDescription] = useState("");
+  const [name, setName] = useState('');
+  const [description, setDescription] = useState('');
 
   //Whenever User info changes in the context, it will also change here
   useEffect(() => {
     setName(currentUser.name);
     setDescription(currentUser.about);
-  }, [currentUser]);
+  }, [currentUser, isOpen]);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -35,7 +35,7 @@ const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoading }) => {
     <PopupWithForm
       title="Edit profile"
       name="edit-profile"
-      buttonText={`${isLoading ? "Saving..." : "Save"}`}
+      buttonText={`${isLoading ? 'Saving...' : 'Save'}`}
       isOpen={isOpen}
       onClose={onClose}
       onSubmit={handleSubmit}
@@ -50,7 +50,7 @@ const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoading }) => {
             className="form__input form__input_type_profile-name"
             minLength="2"
             maxLength="40"
-            value={name || ""}
+            value={name || ''}
             onChange={handleNameChange}
             required
           />
@@ -65,7 +65,7 @@ const EditProfilePopup = ({ isOpen, onClose, onUpdateUser, isLoading }) => {
             className="form__input form__input_type_profile-title"
             minLength="2"
             maxLength="200"
-            value={description || ""}
+            value={description || ''}
             onChange={handleDescriptionChange}
             required
           />

@@ -45,7 +45,7 @@ const Login = ({ handleLogin }) => {
           onChange={handleChange}
         />
 
-        <footer className="auth-form__footer">
+        <div className="auth-form__footer">
           <div className="auth-form__footer-wrapper">
             <button type="submit" className="auth-form__submit-button">
               Log in
@@ -57,7 +57,7 @@ const Login = ({ handleLogin }) => {
               </Link>
             </p>
           </div>
-        </footer>
+        </div>
       </form>
     </div>
   );

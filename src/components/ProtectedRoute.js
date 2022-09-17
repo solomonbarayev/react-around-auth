@@ -11,9 +11,9 @@ const ProtectedRoute = ({ loggedIn, children, isCheckingToken, ...props }) => {
       : setShouldRender(true);
   }, [isCheckingToken, loggedIn]);
 
-  if (!shouldRender) {
-    return <Loader />;
-  }
+  // if (!shouldRender) {
+  //   return <Loader />;
+  // }
 
   return (
     <Route {...props}>{loggedIn ? children : <Redirect to="/signin" />}</Route>
