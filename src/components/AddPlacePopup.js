@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-import PopupWithForm from "./PopupWithForm";
+import React, { useEffect } from 'react';
+import PopupWithForm from './PopupWithForm';
+import { useForm } from '../hooks/useForm';
 
 const AddPlacePopup = ({ isLoading, isOpen, onClose, onAddPlaceSubmit }) => {
-  const [name, setName] = useState("");
-  const [link, setLink] = useState("");
-
-  function handleNameChange(e) {
-    setName(e.target.value);
-  }
-  function handleLinkChange(e) {
-    setLink(e.target.value);
-  }
+  const { values, handleChange, setValues } = useForm({});
 
   function handleSubmit(e) {
+    const { name, link } = values;
     e.preventDefault();
     onAddPlaceSubmit({ name, link });
   }
+
+  useEffect(() => {
+    setValues({});
+  }, [isOpen]);
 
   return (
     <PopupWithForm
@@ -23,7 +21,7 @@ const AddPlacePopup = ({ isLoading, isOpen, onClose, onAddPlaceSubmit }) => {
       name="add-place"
       isOpen={isOpen}
       onClose={onClose}
-      buttonText={`${isLoading ? "Creating..." : "Create"}`}
+      buttonText={`${isLoading ? 'Creating...' : 'Create'}`}
       onSubmit={handleSubmit}
     >
       <fieldset className="form__fieldset">
@@ -37,8 +35,8 @@ const AddPlacePopup = ({ isLoading, isOpen, onClose, onAddPlaceSubmit }) => {
             required
             minLength="1"
             maxLength="30"
-            value={name || ""}
-            onChange={handleNameChange}
+            value={values.name || ''}
+            onChange={handleChange}
           />
           <span className="form__input-error place-title-input-error"></span>
         </div>
@@ -50,8 +48,8 @@ const AddPlacePopup = ({ isLoading, isOpen, onClose, onAddPlaceSubmit }) => {
             placeholder="Image link"
             className="form__input form__input_type_place-url"
             required
-            value={link || ""}
-            onChange={handleLinkChange}
+            value={values.link || ''}
+            onChange={handleChange}
           />
           <span className="form__input-error place-url-input-error"></span>
         </div>
