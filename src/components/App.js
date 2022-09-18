@@ -262,6 +262,9 @@ function App() {
         console.log(err);
         setInfoTooltipType('unsuccessful');
         setIsInfoTooltipOpen(true);
+      })
+      .finally(() => {
+        setIsCheckingToken(false);
       });
   }
 
