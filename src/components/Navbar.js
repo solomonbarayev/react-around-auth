@@ -61,21 +61,6 @@ export function Navbar({
           )}
         </button>
       )}
-      {/* <button
-        type="button"
-        className="header__menu-button"
-        onClick={toggleMobileMenu}
-      >
-        {!isMobileMenuOpen ? (
-          <img
-            src={hamburgerIcon}
-            alt="menu"
-            className="header__hamburger-icon"
-          />
-        ) : (
-          <img src={closeIcon} alt="close" className="header__close-icon" />
-        )}
-      </button> */}
     </nav>
   );
 }
