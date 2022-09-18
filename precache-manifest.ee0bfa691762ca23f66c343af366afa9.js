@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "aa75fdd9aab82d6d8464",
+    "revision": "48a2ff8fb0e2341d4f8b",
     "url": "/react-around-auth/static/css/main.4d09a9df.chunk.css"
   },
   {
-    "revision": "aa75fdd9aab82d6d8464",
-    "url": "/react-around-auth/static/js/main.642c8221.chunk.js"
+    "revision": "48a2ff8fb0e2341d4f8b",
+    "url": "/react-around-auth/static/js/main.49c56d7d.chunk.js"
   },
   {
     "revision": "6f490005da730ceb1e86",
@@ -40,47 +40,47 @@ self.__precacheManifest = [
     "url": "/react-around-auth/static/media/unsuccessful_icon.f10ac534.svg"
   },
   {
-    "revision": "3ac83020fe53b617b79b5e2ad66764af",
-    "url": "/react-around-auth/static/media/Inter-Regular.3ac83020.woff"
-  },
-  {
     "revision": "dc131113894217b5031000575d9de002",
     "url": "/react-around-auth/static/media/Inter-Regular.dc131113.woff2"
+  },
+  {
+    "revision": "3ac83020fe53b617b79b5e2ad66764af",
+    "url": "/react-around-auth/static/media/Inter-Regular.3ac83020.woff"
   },
   {
     "revision": "c0638bea87a05fdfa2bb3bba2efe54e4",
     "url": "/react-around-auth/static/media/Inter-Medium.c0638bea.woff"
   },
   {
-    "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
-    "url": "/react-around-auth/static/media/Inter-Black.d0b121f3.woff"
-  },
-  {
-    "revision": "6bfdb35467f51d3ba1f70f8d4a9c2b59",
-    "url": "/react-around-auth/static/media/edit_icon.6bfdb354.svg"
-  },
-  {
     "revision": "7ee866f113eb2ed4216d588f5b956e6e",
     "url": "/react-around-auth/static/media/trash.7ee866f1.svg"
-  },
-  {
-    "revision": "661569afe57a38e1529a775a465da20b",
-    "url": "/react-around-auth/static/media/Inter-Black.661569af.woff2"
-  },
-  {
-    "revision": "b2fce4ac45f3d116cd48ec8d068ab723",
-    "url": "/react-around-auth/static/media/plus_icon.b2fce4ac.svg"
-  },
-  {
-    "revision": "ef38b085db5a81756d4dc5a64c1fccb8",
-    "url": "/react-around-auth/static/media/heart_icon-filled.ef38b085.svg"
   },
   {
     "revision": "dd31dd063f1c376deb28b582c4a64833",
     "url": "/react-around-auth/static/media/heart_icon.dd31dd06.svg"
   },
   {
-    "revision": "ae069fe50cc2aa6bd20b154301217d02",
+    "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
+    "url": "/react-around-auth/static/media/Inter-Black.d0b121f3.woff"
+  },
+  {
+    "revision": "661569afe57a38e1529a775a465da20b",
+    "url": "/react-around-auth/static/media/Inter-Black.661569af.woff2"
+  },
+  {
+    "revision": "ef38b085db5a81756d4dc5a64c1fccb8",
+    "url": "/react-around-auth/static/media/heart_icon-filled.ef38b085.svg"
+  },
+  {
+    "revision": "b2fce4ac45f3d116cd48ec8d068ab723",
+    "url": "/react-around-auth/static/media/plus_icon.b2fce4ac.svg"
+  },
+  {
+    "revision": "6bfdb35467f51d3ba1f70f8d4a9c2b59",
+    "url": "/react-around-auth/static/media/edit_icon.6bfdb354.svg"
+  },
+  {
+    "revision": "3f0fbe55b90c5a6a35067993ea05b5bf",
     "url": "/react-around-auth/index.html"
   }
 ];
