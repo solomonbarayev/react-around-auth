@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "48a2ff8fb0e2341d4f8b",
+    "revision": "c396a7193f13dd377c94",
     "url": "/react-around-auth/static/css/main.4d09a9df.chunk.css"
   },
   {
-    "revision": "48a2ff8fb0e2341d4f8b",
-    "url": "/react-around-auth/static/js/main.49c56d7d.chunk.js"
+    "revision": "c396a7193f13dd377c94",
+    "url": "/react-around-auth/static/js/main.bd01db74.chunk.js"
   },
   {
     "revision": "6f490005da730ceb1e86",
@@ -48,24 +48,28 @@ self.__precacheManifest = [
     "url": "/react-around-auth/static/media/Inter-Regular.3ac83020.woff"
   },
   {
+    "revision": "dd31dd063f1c376deb28b582c4a64833",
+    "url": "/react-around-auth/static/media/heart_icon.dd31dd06.svg"
+  },
+  {
     "revision": "c0638bea87a05fdfa2bb3bba2efe54e4",
     "url": "/react-around-auth/static/media/Inter-Medium.c0638bea.woff"
+  },
+  {
+    "revision": "661569afe57a38e1529a775a465da20b",
+    "url": "/react-around-auth/static/media/Inter-Black.661569af.woff2"
   },
   {
     "revision": "7ee866f113eb2ed4216d588f5b956e6e",
     "url": "/react-around-auth/static/media/trash.7ee866f1.svg"
   },
   {
-    "revision": "dd31dd063f1c376deb28b582c4a64833",
-    "url": "/react-around-auth/static/media/heart_icon.dd31dd06.svg"
-  },
-  {
     "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
     "url": "/react-around-auth/static/media/Inter-Black.d0b121f3.woff"
   },
   {
-    "revision": "661569afe57a38e1529a775a465da20b",
-    "url": "/react-around-auth/static/media/Inter-Black.661569af.woff2"
+    "revision": "6bfdb35467f51d3ba1f70f8d4a9c2b59",
+    "url": "/react-around-auth/static/media/edit_icon.6bfdb354.svg"
   },
   {
     "revision": "ef38b085db5a81756d4dc5a64c1fccb8",
@@ -76,11 +80,7 @@ self.__precacheManifest = [
     "url": "/react-around-auth/static/media/plus_icon.b2fce4ac.svg"
   },
   {
-    "revision": "6bfdb35467f51d3ba1f70f8d4a9c2b59",
-    "url": "/react-around-auth/static/media/edit_icon.6bfdb354.svg"
-  },
-  {
-    "revision": "3f0fbe55b90c5a6a35067993ea05b5bf",
+    "revision": "6953bc79be875b1a33103fbaa208bd5f",
     "url": "/react-around-auth/index.html"
   }
 ];
