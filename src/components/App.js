@@ -103,7 +103,7 @@ function App() {
           if (res.data._id) {
             setLoggedIn(true);
             setUserData({ email: res.data.email });
-            history.push('/');
+            history.push('/react-around-auth');
           }
         })
         .catch((err) => {
@@ -257,7 +257,7 @@ function App() {
           setLoggedIn(true);
           setUserData({ email });
           localStorage.setItem('jwt', res.token);
-          history.push('/');
+          history.push('/react-around-auth');
         }
       })
       .catch((err) => {
@@ -287,7 +287,7 @@ function App() {
         <Switch>
           <ProtectedRoute
             exact
-            path="/"
+            path="/react-around-auth"
             loggedIn={loggedIn}
             isCheckingToken={isCheckingToken}
           >
@@ -311,7 +311,11 @@ function App() {
           </Route>
 
           <Route>
-            {loggedIn ? <Redirect to="/" /> : <Redirect to="/signin" />}
+            {loggedIn ? (
+              <Redirect to="/react-around-auth" />
+            ) : (
+              <Redirect to="/signin" />
+            )}
           </Route>
         </Switch>
 
