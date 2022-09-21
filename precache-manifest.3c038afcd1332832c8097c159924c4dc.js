@@ -44,24 +44,16 @@ self.__precacheManifest = [
     "url": "/react-around-auth/static/media/Inter-Regular.3ac83020.woff"
   },
   {
+    "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
+    "url": "/react-around-auth/static/media/Inter-Black.d0b121f3.woff"
+  },
+  {
     "revision": "dc131113894217b5031000575d9de002",
     "url": "/react-around-auth/static/media/Inter-Regular.dc131113.woff2"
   },
   {
     "revision": "c0638bea87a05fdfa2bb3bba2efe54e4",
     "url": "/react-around-auth/static/media/Inter-Medium.c0638bea.woff"
-  },
-  {
-    "revision": "d0b121f3a9d3d88afdfd6902d31ee9a0",
-    "url": "/react-around-auth/static/media/Inter-Black.d0b121f3.woff"
-  },
-  {
-    "revision": "7ee866f113eb2ed4216d588f5b956e6e",
-    "url": "/react-around-auth/static/media/trash.7ee866f1.svg"
-  },
-  {
-    "revision": "dd31dd063f1c376deb28b582c4a64833",
-    "url": "/react-around-auth/static/media/heart_icon.dd31dd06.svg"
   },
   {
     "revision": "661569afe57a38e1529a775a465da20b",
@@ -74,6 +66,14 @@ self.__precacheManifest = [
   {
     "revision": "6bfdb35467f51d3ba1f70f8d4a9c2b59",
     "url": "/react-around-auth/static/media/edit_icon.6bfdb354.svg"
+  },
+  {
+    "revision": "7ee866f113eb2ed4216d588f5b956e6e",
+    "url": "/react-around-auth/static/media/trash.7ee866f1.svg"
+  },
+  {
+    "revision": "dd31dd063f1c376deb28b582c4a64833",
+    "url": "/react-around-auth/static/media/heart_icon.dd31dd06.svg"
   },
   {
     "revision": "ef38b085db5a81756d4dc5a64c1fccb8",
